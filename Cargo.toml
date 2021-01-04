@@ -1,0 +1,26 @@
+[package]
+name = "rust-web"
+version = "0.1.0"
+authors = ["yaoliao <yaoliao_11@163.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+rocket = "0.4.6"
+
+diesel = { version = "1.4.4", features = ["mysql"] }
+dotenv = "0.15.0"
+
+# 链接池
+r2d2-diesel = "1.0"
+r2d2 = "0.8"
+# 序列化框架
+serde = "1.0"
+serde_derive = "1.0"
+serde_json = "1.0"
+custom_derive ="0.1.7"
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["json"]

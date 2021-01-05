@@ -41,7 +41,7 @@ fn main() {
         .manage(pool)
         .mount(
             "/",
-            routes![index,get_all,new_user],
+            routes![index,get_all,new_user,update_by_name,update],
         )
         .launch();
 }

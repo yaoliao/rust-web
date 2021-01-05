@@ -18,3 +18,24 @@ Content-Type: application/json
 }
 
 ###
+
+POST http://localhost:8080/updateAge/Rose/16
+Content-Type: application/json
+
+{}
+
+###
+
+POST http://localhost:8080/update
+Content-Type: application/json
+
+{
+  "id": 2,
+  "username": "Jack",
+  "password": "23333",
+  "age": 16
+}
+
+###
+
+
